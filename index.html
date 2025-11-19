@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,22 +33,31 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
     <style>
         .color-transition {
             transition: background-color 0.5s ease;
         }
     </style>
 </head>
-<body class="font-sans color-transition bg-light-background text-light-text dark:bg-dark-background dark:text-dark-text min-h-screen">
+
+<body
+    class="font-sans color-transition bg-light-background text-light-text dark:bg-dark-background dark:text-dark-text min-h-screen">
     <!-- Theme Toggle -->
     <div class="fixed top-4 right-4 z-10">
-        <button id="themeToggle" class="bg-white dark:bg-gray-800 rounded-full p-2 shadow-md hover:shadow-lg transition-shadow">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500 dark:text-gray-300 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        <button id="themeToggle"
+            class="bg-white dark:bg-gray-800 rounded-full p-2 shadow-md hover:shadow-lg transition-shadow">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500 dark:text-gray-300 hidden dark:block"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700 dark:hidden" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
             </svg>
         </button>
     </div>
@@ -68,34 +78,46 @@
                     <span class="text-light-secondary dark:text-dark-secondary">Current color:</span>
                     <div id="currentColor" class="font-mono text-xl font-semibold mt-1">#FAFAF8</div>
                 </div>
-                <div class="h-32 rounded-lg mb-4 flex items-center justify-center border border-gray-200 dark:border-gray-700" id="colorDisplay">
-                    <span class="text-white bg-black bg-opacity-40 px-3 py-1 rounded-full text-sm" id="colorText">Background</span>
+                <div class="h-32 rounded-lg mb-4 flex items-center justify-center border border-gray-200 dark:border-gray-700"
+                    id="colorDisplay">
+                    <span class="text-white bg-black bg-opacity-40 px-3 py-1 rounded-full text-sm"
+                        id="colorText">Background</span>
                 </div>
             </div>
 
             <!-- Color Controls -->
             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
                 <h2 class="text-xl font-semibold mb-4 text-center">Choose a color</h2>
-                
+
                 <div class="grid grid-cols-2 gap-4 mb-6">
-                    <button id="green" class="py-3 rounded-lg text-white font-semibold shadow-md hover:shadow-lg transition-shadow" style="background-color: #10B981;">Green</button>
-                    <button id="red" class="py-3 rounded-lg text-white font-semibold shadow-md hover:shadow-lg transition-shadow" style="background-color: #EF4444;">Red</button>
-                    <button id="blue" class="py-3 rounded-lg text-white font-semibold shadow-md hover:shadow-lg transition-shadow" style="background-color: #3B82F6;">Blue</button>
-                    <button id="random" class="py-3 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-md hover:shadow-lg transition-shadow">Random</button>
+                    <button id="green"
+                        class="py-3 rounded-lg text-white font-semibold shadow-md hover:shadow-lg transition-shadow"
+                        style="background-color: #10B981;">Green</button>
+                    <button id="red"
+                        class="py-3 rounded-lg text-white font-semibold shadow-md hover:shadow-lg transition-shadow"
+                        style="background-color: #EF4444;">Red</button>
+                    <button id="blue"
+                        class="py-3 rounded-lg text-white font-semibold shadow-md hover:shadow-lg transition-shadow"
+                        style="background-color: #3B82F6;">Blue</button>
+                    <button id="random"
+                        class="py-3 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-md hover:shadow-lg transition-shadow">Random</button>
                 </div>
 
                 <div class="mb-6">
-                    <label for="customColor" class="block text-sm font-medium text-light-secondary dark:text-dark-secondary mb-2">Or pick a custom color</label>
+                    <label for="customColor"
+                        class="block text-sm font-medium text-light-secondary dark:text-dark-secondary mb-2">Or pick a
+                        custom color</label>
                     <div class="flex items-center">
                         <input type="color" id="customColor" class="w-12 h-12 border-0 rounded cursor-pointer">
-                        <input type="text" id="customColorText" placeholder="#FFFFFF" class="ml-3 flex-grow border border-gray-300 dark:border-gray-600 rounded-md py-2 px-3 bg-transparent">
+                        <input type="text" id="customColorText" placeholder="#FFFFFF"
+                            class="ml-3 flex-grow border border-gray-300 dark:border-gray-600 rounded-md py-2 px-3 bg-transparent">
                     </div>
                 </div>
             </div>
         </main>
 
         <footer class="mt-12 text-center text-light-secondary dark:text-dark-secondary">
-            <p>Color Flipper © 2025 • Developed by <a href="https://www.linkedin.com/in/suhaib-nadakkavil" target="_blank"
+            <p>© 2025 • Developed by <a href="https://www.linkedin.com/in/suhaib-nadakkavil" target="_blank"
                     class="text-light-secondary hover:text-light-text dark:text-dark-secondary dark:hover:text-dark-text underline transition-colors">msn4u</a>
             </p>
         </footer>
@@ -110,27 +132,27 @@
         const colorText = document.getElementById('colorText');
         const customColor = document.getElementById('customColor');
         const customColorText = document.getElementById('customColorText');
-        
+
         // Theme Management
         function initTheme() {
             const savedTheme = localStorage.getItem('theme') || 'system';
             const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            
+
             if (savedTheme === 'dark' || (savedTheme === 'system' && systemDark)) {
                 document.documentElement.classList.add('dark');
             } else {
                 document.documentElement.classList.remove('dark');
             }
-            
+
             localStorage.setItem('theme', savedTheme);
         }
-        
+
         function toggleTheme() {
             const isDark = document.documentElement.classList.contains('dark');
             document.documentElement.classList.toggle('dark');
             localStorage.setItem('theme', isDark ? 'light' : 'dark');
         }
-        
+
         // Color Functions
         function setBgColor(color) {
             body.style.backgroundColor = color;
@@ -138,16 +160,16 @@
             currentColorEl.textContent = color;
             updateColorText(color);
         }
-        
+
         function randomBgColor() {
             const red = Math.round(Math.random() * 255);
             const green = Math.round(Math.random() * 255);
             const blue = Math.round(Math.random() * 255);
             const color = `rgb(${red}, ${green}, ${blue})`;
-            
+
             setBgColor(color);
         }
-        
+
         function updateColorText(color) {
             // Simple check for light/dark color to adjust text contrast
             const rgbMatch = color.match(/rgb\((\d+),\s*(\d+),\s*(\d+)\)/);
@@ -162,7 +184,7 @@
                 colorText.textContent = 'Background';
             }
         }
-        
+
         function setCustomColor(color) {
             // Validate color format
             const hexRegex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
@@ -171,33 +193,34 @@
                 customColor.value = color;
             }
         }
-        
+
         // Event Listeners
         document.getElementById('green').addEventListener('click', () => setBgColor('#10B981'));
         document.getElementById('red').addEventListener('click', () => setBgColor('#EF4444'));
         document.getElementById('blue').addEventListener('click', () => setBgColor('#3B82F6'));
         document.getElementById('random').addEventListener('click', randomBgColor);
-        
+
         themeToggle.addEventListener('click', toggleTheme);
-        
+
         customColor.addEventListener('input', (e) => {
             setBgColor(e.target.value);
             customColorText.value = e.target.value;
         });
-        
+
         customColorText.addEventListener('change', (e) => {
             setCustomColor(e.target.value);
         });
-        
+
         customColorText.addEventListener('keyup', (e) => {
             if (e.key === 'Enter') {
                 setCustomColor(e.target.value);
             }
         });
-        
+
         // Initialize
         initTheme();
         setBgColor('#FAFAF8'); // Set initial color to light theme background
     </script>
 </body>
+
 </html>
